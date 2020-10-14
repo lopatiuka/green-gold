@@ -1567,7 +1567,6 @@ details p {
         width: 50px;
         height: 50px;
     }
-    \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
     .how-works .container .steps .steps-headers p {
         font-size: 28px;
@@ -1935,7 +1934,8 @@ details p {
 
     .about .container .about-header {
         width: 724px;
-        font-size: 24px;
+        font-size: 50px;
+        line-height: 50px;
     }
 
     .about .container .description p {
@@ -2004,7 +2004,7 @@ details p {
 
     .about .container .market-leaders .item {
         width: 630.51px;
-        height: 522px;
+        height: 600px;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
@@ -2013,10 +2013,11 @@ details p {
 
     .about .container .market-leaders .item .market-leaders-description {
         height: auto;
-        width: 262px;
-        font-size: 14px;
+        width: 330px;
+        font-size: 20px;
         margin-top: 0;
         margin-bottom: 20px;
+        padding: 0;
     }
 
     .about .container .market-leaders .item .details-container {
@@ -2027,15 +2028,42 @@ details p {
 
     .about .container .market-leaders .item h3 {
         display: inline-block;
-        font-size: 18px;
+        font-size: 30px;
         padding-left: 20px;
         padding-right: 20px;
         width: 100%;
         height: 70px;
     }
 
+    .about .container .about-items .item {
+        height: 200px;
+    }
+
+    .about .container .about-items .item img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .about .container .about-items .item .item-detail {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .about .container .about-items .item .item-detail h2 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .about .container .about-items .item .item-detail p {
+        font-size: 40px;
+        text-align: left;
+        line-height: 50px;
+    }
+
     .about .container .market-leaders .item .details-container .details-inner p {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .about .container .market-leaders .item .details-container img {
@@ -2058,11 +2086,13 @@ details p {
 
     .how-works .container .steps {
         flex-wrap: wrap;
+        justify-content: flex-start;
     }
 
     .how-works .container .steps hr {
-        margin-left: -50px;
-        width: 208px;
+        margin-left: -280px;
+        margin-top: 60px;
+        width: 400px;
     }
 
     .how-works .container .steps hr.third-line {
@@ -2072,20 +2102,36 @@ details p {
     .how-works .container .steps .step-item {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         margin-left: 50px;
         width: 550px;
     }
 
+    .how-works .container .steps .step-item img {
+        width: 100px;
+        height: 100px;
+    }
+
     .how-works .container .steps .step-item .step-header {
         width: 100%;
+        font-size: 40px;
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+        margin-bottom: 0;
     }
 
     .how-works .container .steps .step-item .steps-item-header {
         width: 400px;
-        font-size: 24px;
+        font-size: 40px;
         text-align: left;
         margin-left: 30px;
+    }
+
+    .how-works .container .steps .step-item .steps-item-description {
+        font-size: 30px;
+        width: 550px;
     }
 
     .how-works .container .steps .steps-headers {
@@ -2107,25 +2153,18 @@ details p {
         margin-right: 100px;
     }
 
-    .how-works .container .steps .steps-items .steps-item {
-        width: 190px;
-    }
-
-    .how-works .container .steps .steps-items .steps-item .steps-item-header {
-        width: 190px;
-    }
-
-    .how-works .container .steps .steps-items .steps-item .steps-item-description {
-        width: 190px;
-    }
-
     .how-works .container .start-now-link {
-        margin-bottom: -50px;
+        margin-bottom: 0;
+        width: 500px;
+        height: 150px;
+        font-size: 40px;
+        border-radius: 80px;
+
     }
     
     .how-works .container img {
-        height: 236.71px;
-        width: 480px;
+        height: 386.71px;
+        width: 780px;
     }
 
     .faq .container {
@@ -2139,12 +2178,25 @@ details p {
 
     .faq .container .answers details {
         width: 800px;
-        height: 42.88px;
+        height: 80px;
         margin-bottom: 30px;
     }
-    .faq .container .answers details p {
-        font-size: 14px;
+
+    .faq .container .answers details summary{
+        height: 80px;
+        font-size: 25px;
     }
+
+    .faq .container .answers details summary .round-button {
+        width: 60px;
+        height: 60px;
+        font-size: 50px;
+    }
+
+    .faq .container .answers details p {
+        font-size: 20px;
+    }
+    
 
     .footer .container {
         flex-direction: column;
