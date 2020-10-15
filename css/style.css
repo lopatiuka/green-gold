@@ -139,6 +139,7 @@ header .exposure .country p {
     text-align: center;
     color: #333333;
     margin: 0; 
+    text-transform: uppercase;
 }
 header .exposure .country img {
     width: 42px;
@@ -181,28 +182,8 @@ header .container .header-country img {
   margin-left: 10px;
   margin-right: 10px;
 }
-header .exposure {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 18px;
-}
-header .exposure p {
-  color: white;
-  margin-top: -10px;
-}
-header .exposure span {
-  border: 2px solid #d9c178;
-  border-radius: 10px;
-  width: 196px;
-  height: 44px;
-  background-color: black;
-  color: #d9c178;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: -10px;
-}
+
+
 header .container .header-country .header-image {
   flex-direction: row;
   justify-content: space-between;
