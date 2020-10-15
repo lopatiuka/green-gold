@@ -43,6 +43,7 @@ section {
     height: 185px;
     margin-top: 50px;
     margin-left: 20px;
+    z-index: 1;
 }
 
 .menu-container .menu-links a {
@@ -73,6 +74,7 @@ section {
     margin-left: 0;
     width: 250px;
     height: 250px;
+    z-index: -1;
 }
 
 .menu-container .menu-cannabis {
@@ -1858,12 +1860,44 @@ details[open] summary .round-button {
         width: 840px;
     }
     .menu-icon {
-        right: -300px;
+        right: -400px;
     }
 
     .right-vector {
         right: -400px;
         display: none;
+    }
+
+
+    .menu-container {
+        position: absolute;
+        right: -500px;
+        width: 600px;
+        height: 800px;
+    }
+    
+    .menu-container .hide {
+        float: right;
+        margin: 15px;
+        font-size: 20px;
+    }
+    
+    .menu-container .hide:hover {
+        cursor: pointer;
+    }
+    
+    .menu-container .menu-links {
+        width: 100%;
+        height: 400px;
+    }
+    
+    .menu-container .menu-links a {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    .menu-container .menu-cannabis {
+        top: 550px;
     }
 
     header .exposure {
