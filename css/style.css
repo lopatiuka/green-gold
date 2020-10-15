@@ -903,11 +903,6 @@ details[open] summary .round-button {
     transform: rotate(135deg);
 }
 
-details p {
-    transition-property: display;
-    transition-duration: 1.2s;
-}
-
 .faq .container .answers details summary:focus {
     outline: none;
 }
@@ -1868,6 +1863,7 @@ details p {
 
     .right-vector {
         right: -400px;
+        display: none;
     }
 
     header .exposure {
