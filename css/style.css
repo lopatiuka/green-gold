@@ -972,6 +972,19 @@ details[open] summary .round-button {
     color: #C2C2C2;
 }
 
+.footer .risk-disclaimer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #C2C2C2;
+    font-family: Montserrat;
+}
+
+.footer .risk-disclaimer h2, .footer .risk-disclaimer p {
+    text-align: center;
+}
+
 .footer .rights {
     font-family: Montserrat;
     font-style: normal;
@@ -981,6 +994,7 @@ details[open] summary .round-button {
     color: #C2C2C2;
     margin-top: 0;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .footer .rights a {
@@ -1408,6 +1422,13 @@ details[open] summary .round-button {
     .footer .container .links-list div a {
         font-size: 14px;
     }
+    
+    .footer .risk-disclaimer h2 {
+        font-size: 32px;
+    }
+    .footer .risk-disclaimer p {
+        font-size: 14px;
+    }
 
     .footer .rights {
         font-size: 14px;
@@ -1647,6 +1668,10 @@ details[open] summary .round-button {
 
     .footer .container .links-list div a {
         font-size: 14px;
+    }
+
+    .footer .risk-disclaimer h2 {
+        font-size: 28px;
     }
 
     .footer .rights {
