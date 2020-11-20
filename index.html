@@ -24,30 +24,10 @@
     <body>
         <div class="wrapper">
             <header>
-                <div id = "menu-container" class = "menu-container hidden">
-                    <p id = "hide-menu" class = "hide">&#10006;</p>
-                    <div class = "menu-links">
-                        <a id = "home-link" href="https://traders.expert/" target="_blank">Home</a>
-                        <a id = "what-we-do-link" href = "https://traders.expert/about-us/" target="_blank">What do we do?</a>
-                        <a id = "leaders-link" href = "https://traders.expert/" target="_blank">Market Leaders</a>
-                        <a id = "how-works-link" href = "https://traders.expert/" target="_blank">How does it work</a>
-                        <a id = "faq-link" href = "https://traders.expert/" target="_blank">FAQ</a>
-                    </div>
-                    <img class = "menu-vector" src = "images/Vector.png">
-                    <img class = "menu-cannabis" src = "images/cannabis.png">
-                </div>
                 <div class = "container">
                     <div class = "main-content">
                         <div class = "image">
                             <a href = "index.html"><img src = "images/logo.png"></a>
-                        </div>
-                        <div class = "navigation">
-                            <a id = "home-link" href="https://traders.expert/" target="_blank">Home</a>
-                            <a id = "what-we-do-link" href = "https://traders.expert/about-us/" target="_blank">What do we do?</a>
-                            <a id = "leaders-link" href = "https://traders.expert/" target="_blank">Market Leaders</a>
-                            <a id = "how-works-link" href = "https://traders.expert/" target="_blank">How does it work</a>
-                            <a id = "faq-link" href = "https://traders.expert/" target="_blank">FAQ</a>
-                            </nav>
                         </div>
                     </div>
                 </div>
@@ -56,11 +36,6 @@
                     <div class = "country">
                         <img id = "flag"><p id = "location"></p>
                     </div>
-                </div>
-                <div id = "menu-icon" class = "menu-icon">
-                    <div class = "line"></div>
-                    <div class = "line"></div>
-                    <div class = "line"></div>
                 </div>
                 <img class = "right-vector" src = "images/Vector-1.png">
             </header>
@@ -397,17 +372,6 @@
             </footer>
         </div>
         <script>
-            let showMenu = () => {
-                document.getElementById( "menu-container" ).classList.remove("hidden");
-            }
-
-            let hideMenu = () => {
-                document.getElementById( "menu-container" ).classList.add("hidden");
-            }
-
-            document.getElementById( "menu-icon" ).addEventListener( "click", showMenu );
-            document.getElementById( "hide-menu" ).addEventListener( "click", hideMenu );
-
             $(".start-now-link").each(function(){
                 $(this).click(function() { 
                     $('html, body').animate({
