@@ -512,12 +512,12 @@ main {
 }
 
 .top-left-leaf {
-    top: 1750px;
+    top: 1676px;
     z-index: -1;
 }
 
 .bottom-left-leaf {
-    top: 2030px;
+    top: 1951px;
 
 }
 
@@ -527,13 +527,12 @@ main {
 }
 
 .top-right-leaf {
-    top: 1750px;
+    top: 1676px;
     z-index: -1;
 }
 
 .bottom-right-leaf {
-    top: 2010px;
-
+    top: 1951px;
 }
 
 .about .container .about-items .top {
