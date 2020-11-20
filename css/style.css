@@ -325,6 +325,10 @@ main {
     background-color: white;
 }
 
+.intro .container .content .form-container img {
+    margin-top: 50px;
+}
+
 .intro .container .content .form-container h2 {
     font-family: Montserrat;
     font-size: 22px;
