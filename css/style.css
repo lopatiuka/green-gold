@@ -698,6 +698,11 @@ main {
     color: #527C6F;
 }
 
+.about .container .start-now-link {
+    margin-bottom: 100px;
+    margin-top: -50px;
+}
+
 .how-works .container {
     display: flex;
     flex-direction: column;
@@ -786,7 +791,7 @@ main {
     height: 100px;
 }
 
-.how-works .container .start-now-link {
+.start-now-link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -803,18 +808,19 @@ main {
     font-size: 18px;
     line-height: 22px;
     color: white;
+    text-align: center;
     text-decoration: none;
 
     transition-property: background-color;
     transition-duration: 0.2s;
 }
 
-.how-works .container .start-now-link:hover {
+.start-now-link:hover {
     background-color: #ECAA00;
     cursor: pointer;
 }
 
-.how-works .container .start-now-link:active {
+.start-now-link:active {
     background-color: #E4A400;
 }
 
@@ -940,7 +946,7 @@ details[open] summary .round-button {
 
 .footer .container .links-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     margin: 70px;
     width: 100%;
@@ -1143,7 +1149,7 @@ details[open] summary .round-button {
         width: 404px;
     }
 
-    .how-works .container .start-now-link {
+    .start-now-link {
         height: 85px;
         width: 282px;
     }
@@ -1372,7 +1378,7 @@ details[open] summary .round-button {
         height: 50px;
     }
     
-    .how-works .container .start-now-link {
+    .start-now-link  {
         height: 64.53px;
         width: 214.09px;
         font-size: 14px;
@@ -1851,7 +1857,7 @@ details[open] summary .round-button {
         width: 190px;
     }
 
-    .how-works .container .start-now-link {
+    .start-now-link {
         margin-bottom: -100px;
     }
     
@@ -2233,13 +2239,13 @@ details[open] summary .round-button {
         margin-right: 100px;
     }
 
-    .how-works .container .start-now-link {
+    .start-now-link {
         margin-bottom: 0;
         width: 500px;
         height: 150px;
         font-size: 40px;
+        line-height: 50px;
         border-radius: 80px;
-
     }
     
     .how-works .container img {
@@ -2641,7 +2647,7 @@ details[open] summary .round-button {
         width: 190px;
     }
 
-    .how-works .container .start-now-link {
+    .start-now-link {
         height: 150px;
         width: 550px;
         margin-bottom: 0;
