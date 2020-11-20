@@ -336,6 +336,10 @@ main {
     margin-top: 80px;
 }
 
+.intro .container .content .form-container h2 span {
+    font-weight: bold;
+}
+
 .intro .container .content .form-container h3 {
     font-family: Montserrat;
     font-style: normal;
