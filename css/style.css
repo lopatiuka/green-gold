@@ -2008,10 +2008,6 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 
-    .footer .container {
-        flex-direction: column;
-    }
-
     .footer .container img {
         height: 47.98px;
         width: 194.05px;
