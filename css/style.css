@@ -272,8 +272,8 @@ main {
     height: auto;
     margin: 10px;
     margin-right: 0;
-    margin-bottom: 40px;
 }
+
 .intro .container .content .video-container .video-header h1 {
     font-family: Montserrat;
     font-style: normal;
@@ -323,6 +323,32 @@ main {
     box-shadow: 0px 4px 25px rgba(79, 79, 79, 0.1);
     border-radius: 30px;
     background-color: white;
+}
+
+.intro .container .align-end {
+    align-items: flex-end;
+}
+
+.intro .container .content .hidden-form2 {
+    display: none;
+}
+
+.intro .container .content #form2 {
+    height: 557px;
+    justify-content: space-between;
+}
+
+.intro .container .content #form2 form input {
+    margin-bottom: 30px;
+}
+
+.intro .container .content #form2 h2 {
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.intro .container .content #form2 h3 {
+    font-weight: bold;
 }
 
 .intro .container .content .form-container img {

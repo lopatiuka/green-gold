@@ -61,6 +61,14 @@
                                     </iframe>
                                 </div>
                             </div>
+                            <div id = "form2" class = "form-container hidden-form2" data-aos="fade-left" data-aos-duration="1500">
+                                <h3>STEP 2</h3>
+                                <h2 class = "form-header">Open an account with Exness & setup your watchlist!</h2>
+                                <img class = "image-step2" src = "images/exness-logo.png">
+                                <form>
+                                    <input type = "submit" value = "Open Account"/>
+                                </form>
+                            </div> 
                             <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1000">
                                 <img src = "images/logo.png">
                                 <h2 class = "form-header"><span>Global Cannabis Industry is worth Billions.</span></br>
@@ -90,7 +98,7 @@
                                             </span>
                                         </label>
                                     </div>
-                                    <input type = "submit" value = "JOIN COMMUNITY"/>
+                                    <input id = "submit-button" type = "submit" value = "JOIN COMMUNITY"/>
                                 </form>
                             </div>   
                         </div>                                                                          
@@ -479,6 +487,14 @@
         </div>
         <script>
             AOS.init();
+        </script>
+        <script>
+            $('#submit-button').click( function( e ){
+                e.preventDefault();
+                $('#form').addClass('hidden-form2');
+                $('#form2').removeClass('hidden-form2');
+                $('.intro .container .content').addClass('align-end');
+            });
         </script>
         <script>
              $('.summary').click(function() {
