@@ -2,6 +2,12 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: Montserrat;
+    position: relative;
+}
+
+body .intgrtn-cookie-popup {
+    max-width: 100%;
 }
   
 section {
@@ -268,7 +274,7 @@ main {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    width: 1111px;
+    width: 992px;
     height: auto;
     margin: 10px;
     margin-right: 0;
@@ -310,6 +316,61 @@ main {
     border-radius: 20px;
 }
 
+.intro .container .content .gtd-form-step-2-exness {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 407px;
+    height: 557px;
+    background-color: white;
+    box-shadow: 0px 4px 25px rgba(79, 79, 79, 0.1);
+    border-radius: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+
+.intro .container .content .gtd-form-step-2-exness .register-form-tab-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.intro .container .content .gtd-form-step-2-exness .register-form-tab-2 .step-2-text-rapper {
+    font-weight: bold;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #333333;
+}
+
+.intro .container .content .gtd-form-step-2-exness .register-form-tab-2 h3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 150%;
+
+    text-align: center;
+
+    color: #333333;
+}
+
+.intro .container .content .gtd-form-step-2-exness .register-form-tab-2 .step-2-text-rapper {
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.intro .container .content .gtd-form-step-2-exness .register-form-tab-2 .step-2-broker-logo-wrapper {
+    margin-top: 0;    
+}
+
 .intro .container .content .form-container {
     display: flex;
     flex-direction: column;
@@ -325,6 +386,10 @@ main {
     background-color: white;
 }
 
+.intro .container .content .hidden {
+    display: none;
+}
+
 .intro .container .align-end {
     align-items: flex-end;
 }
@@ -333,22 +398,46 @@ main {
     display: none;
 }
 
-.intro .container .content #form2 {
-    height: 557px;
-    justify-content: space-between;
+.intgrtn-form-signup .intgrtn-input-holder-email {
+    display: none;
 }
 
-.intro .container .content #form2 form input {
-    margin-bottom: 30px;
+.intgrtn-form-signup .intgrtn-input-holder-last-name {
+    display: none;
 }
 
-.intro .container .content #form2 h2 {
-    font-weight: 500;
-    margin-top: 0;
+.intgrtn-form-signup .intgrtn-input-holder-first-name {
+    display: none;
 }
 
-.intro .container .content #form2 h3 {
-    font-weight: bold;
+.intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+    height: 50px;
+    margin-bottom: 0px;
+    max-width: 445px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder {
+    height: 100%;
+    background-color: inherit;
+    border-top: none;
+    border-left: none;
+    border-bottom: 1px solid #333333;
+}
+
+.intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area {
+    margin-top: 18px;
+}
+
+.intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area .intgrtn-phone-code {
+    color: #4F4F4F;
+    font-size: 18px;
+}
+
+.intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+    width: 360px;
+    margin: 0;
 }
 
 .intro .container .content .form-container img {
@@ -405,8 +494,9 @@ main {
     margin-top: 30px;
 }
 
-.intro .container .content .form-container form input[type=submit] {
-    width: 282px;
+.intro .container .content .form-container form button,
+.intro .container .content .gtd-form-step-2-exness .register-form-tab-2 button {
+    width: 325px;
     height: 85px;
     border-radius: 42.5px;
     font-family: Montserrat;
@@ -419,18 +509,29 @@ main {
     color: white;
     background-color: #234442;
     border: none;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     transition-property: background-color;
     transition-duration: 0.2s;
 }
 
-.intro .container .content .form-container form input[type=submit]:hover{
+.signup-form-wrapper .intgrtn-form-signup .intgrtn-btn-submit-holder .intgrtn-btn-submit[disabled], .signup-form-wrapper .intgrtn-form-optin .intgrtn-btn-submit-holder .intgrtn-btn-submit[disabled] {
+    cursor: not-allowed;
+    background: rgb(192, 185, 185);
+}
+
+.intro .container .content .form-container form button:hover:not([disabled]),
+.intro .container .content .gtd-form-step-2-exness .register-form-tab-2 button:hover {
     background-color: #ECAA00;
     cursor: pointer; 
 }
 
-.intro .container .content .form-container form input[type=submit]:active{
+.intro .container .content .form-container form button:active,
+.intro .container .content .gtd-form-step-2-exness .register-form-tab-2 button:active{
     background-color: #E4A400;
+}
+
+.intro .container .content .gtd-form-step-2-exness .register-form-tab-2 button:focus {
+    outline: none;
 }
 
 .intro .container .content .form-container form .checkboxes {
@@ -466,7 +567,8 @@ main {
     color: #B7B7B7;
 }
 
-.intro .container .content .form-container form .checkboxes label span a {
+.intro .container .content .form-container form .checkboxes label span a,
+.intro .container .content .form-container form .checkboxes label span a span {
     color: #527C6F;
     text-decoration: none;
 }
@@ -727,7 +829,7 @@ main {
     margin: 5px;
 }
 
-.about .container .market-leaders .item .details-container .details-inner p span {
+.about .container .market-leaders .item .details-container .details-inner p span:first-child {
     color: #527C6F;
 }
 
@@ -895,7 +997,7 @@ main {
     margin-bottom: 100px;
 }
 
-.faq .container .answers details {
+.faq .container .answers .details-faq {
     margin-bottom: 20px;
     cursor: pointer;
     display: flex;
@@ -904,11 +1006,7 @@ main {
     width: 1395px;
 }
 
-.faq .container .answers details summary::-webkit-details-marker {
-    display: none
-}
-
-.faq .container .answers details summary {
+.faq .container .answers .details-faq .summary-faq {
     width: 100%;
     height: 55px;
     display: flex;
@@ -925,7 +1023,7 @@ main {
     color: white;
 }
 
-.faq .container .answers details summary .round-button{
+.faq .container .answers .details-faq .summary-faq .round-button{
     width: 34px;
     height: 34px;
     border-radius: 100px;
@@ -944,15 +1042,15 @@ main {
     transition-duration: 0.2s;
 }
 
-details[open] summary .round-button {
+.round-button-rotated {
     transform: rotate(135deg);
 }
 
-.faq .container .answers details summary:focus {
-    outline: none;
+.faq .container .answers .details-faq .opening {
+    display: none;
 }
 
-.faq .container .answers details p {
+.faq .container .answers .details-faq p {
     max-width: 1390px;
     font-family: Montserrat;
     font-size: 18px;
@@ -977,12 +1075,16 @@ details[open] summary .round-button {
     align-items: center;
 }
 
+.footer .container .footer-logo {
+    margin-top: 75px;
+}
+
 .footer .container .links-list {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    margin: 70px;
+    margin: 70px 0 70px 0;
     width: 100%;
     color: #527C6F;
 }
@@ -996,6 +1098,10 @@ details[open] summary .round-button {
     font-size: 18px;
     line-height: 150%;
     color: #527C6F;
+}
+
+.footer .container .links-list a:hover {
+    color:rgb(235, 200, 1);
 }
 
 .footer .risk-disclaimer {
@@ -1158,6 +1264,11 @@ details[open] summary .round-button {
         align-self: flex-start;
     }
 
+    .intro .container .content .video-container .video,
+    .intro .container .content .gtd-form-step-2-exness {
+        height: 474px;
+    }
+
     .intro .container .content .form-container {
         width: 407px;
     }
@@ -1168,6 +1279,14 @@ details[open] summary .round-button {
 
     .intro .container .content .form-container form input {
         width: 335.4px;
+    }
+
+    .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        max-width: 336px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+        width: 255px;
     }
 
     .intro .container .content .form-container form .checkboxes {
@@ -1288,8 +1407,8 @@ details[open] summary .round-button {
     }
 
     .how-works .container img {
-        height: 621.86px;
-        width: 1441.38px;
+        height: auto;
+        width: 98%;
     }
 
     .faq .container {
@@ -1303,7 +1422,7 @@ details[open] summary .round-button {
         align-items: center;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 1062px;
     }
 
@@ -1328,13 +1447,20 @@ details[open] summary .round-button {
     header .container .main-content {
         width: 650px;
     }
+
+    header .exposure {
+        margin-right: 30px;
+    }
+
     .intro .container .content {
         margin-top: -100px;
     }
+
     .intro .container .content .video-container {
         width: 657.2px;
         height: auto;
     }
+
     .intro .container .content .video-container .video-header h1 {
         font-size: 42px;
         text-align: left;
@@ -1342,6 +1468,11 @@ details[open] summary .round-button {
 
     .intro .container .content .video-container .video-header {
         align-self: flex-start;
+    }
+
+    .intro .container .content .video-container .video,
+    .intro .container .content .gtd-form-step-2-exness {
+        height: 370px;
     }
 
     .intro .container .content .form-container {
@@ -1357,11 +1488,15 @@ details[open] summary .round-button {
         font-size: 18px;
     }
 
+    .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        max-width: 258px;
+    }
+
     .intro .container .content .form-container form input {
         width: 258.04px;
     }
-    .intro .container .content .form-container form input[type = submit]{
-        width: 216.96px;
+    .intro .container .content .form-container form button{
+        width: 257.96px;
         height: 65.39px;
         font-size: 14px;
     }
@@ -1501,7 +1636,7 @@ details[open] summary .round-button {
     }
     
     .how-works .container .steps .step-item {
-        width: 307px;
+        width: 305px;
     }
 
     .how-works .container .steps .step-item .step-header {
@@ -1529,11 +1664,6 @@ details[open] summary .round-button {
         font-size: 14px;
     }
 
-    .how-works .container img {
-        height: 410.12px;
-        width: 1000px;
-    }
-
     .faq .container .faq-header {
         font-size: 41.85px;
     }
@@ -1547,21 +1677,21 @@ details[open] summary .round-button {
     }
 
     .faq .container .answers {
-        width: 100%;
+        width: 97%;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 828px;
     }
 
-    .faq .container .answers details summary {
+    .faq .container .answers .details-faq .summary-faq {
         font-size: 14px;
     }
 
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 14px;
     }
 
@@ -1593,10 +1723,6 @@ details[open] summary .round-button {
         position: absolute;
     }
 
-    .menu-icon {
-        display: block;
-    }
-
     header .exposure{
         left: 0;
         right: initial;
@@ -1615,8 +1741,14 @@ details[open] summary .round-button {
         align-self: flex-start;
     }
 
+    .intro .container .content .gtd-form-step-2-exness {
+        margin-left: 0;
+    }
+
     .intro .container .content .form-container {
         width: 524px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .intro .container .content .form-container h2 {
@@ -1628,10 +1760,18 @@ details[open] summary .round-button {
         font-size: 18px;
     }
 
+    .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        max-width: 433px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+        width: 355px;
+    }
+
     .intro .container .content .form-container form input {
         width: 431.81px;
     }
-    .intro .container .content .form-container form input[type = submit]{
+    .intro .container .content .form-container form button{
         height: 65.39px;
         width: 363.07px;
         margin-bottom: 50px;
@@ -1780,11 +1920,6 @@ details[open] summary .round-button {
     .how-works .container .steps .steps-items .steps-item .steps-item-description {
         width: 247px;
     }
-    
-    .how-works .container img {
-        height: 471.86px;
-        width: 994.29px;
-    }
 
     .faq .container {
         width: 100%;
@@ -1797,10 +1932,10 @@ details[open] summary .round-button {
         align-items: center;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 799px;
     }
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 14px;
     }
 
@@ -2006,11 +2141,6 @@ details[open] summary .round-button {
     .start-now-link {
         margin-bottom: -100px;
     }
-    
-    .how-works .container img {
-        height: 378px;
-        width: 766.51px;
-    }
 
     .faq .container {
         width: 100%;
@@ -2021,16 +2151,15 @@ details[open] summary .round-button {
         height: auto;
     }
 
-    .faq .container .answers details {
+    .faq .container .answers .details-faq {
         width: 632px;
-        height: 42.88px;
     }
 
     .faq .container .answers details[open]{
         height: auto;
     }
 
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 14px;
     }
 
@@ -2062,64 +2191,158 @@ details[open] summary .round-button {
     }
 }
 
-@media ( max-device-width: 1024px ) {
-    body {
-        width: 1300px;
+@media ( min-width: 481px ) and ( max-width: 690px ) {
+    header .exposure {
+        top: 0;
     }
-    .about .container {
+
+    header .exposure .country {
+        flex-direction: column-reverse;
+    }
+
+    .intro .container .content .video-container {
+        width: 481px;
+        margin-left: 0;
+    }
+
+    .intro .container .content .video-container .video-header p {
+        width: auto;
+    }
+
+    .intro .container .content .video-container .video {
+        height: 271px;
+    }
+
+    .intro .container .content .form-container .gtd-form-step-2 {
+        width: 94%;
+    }
+    
+    .intro .container .content .form-container .gtd-form-step-1 {
+        width: 94%;
+    }
+
+    .intro .container .content .form-container form {
         width: 100%;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        max-width: 380px;
+    }
+    
+    .intro .container .content .form-container .gtd-form-step-2 form .intgrtn-input-holder-phone {
+        width: 96%;
+    }
+
+    .intro .container .content .form-container {
+        width: 421px;
+    }
+
+    .intro .container .content .form-container form input {
+        width: 381px;
+    }
+
+    .intro .container .content .form-container form .checkboxes {
+        width: 328px;
+    }
+
+    .intro .container .content .form-container form .checkboxes .switch {
+        width: 50px;
+    }
+
+    .intro .container .content .form-container form .checkboxes .custom-checkbox p {
+        width: 315px;
+    }
+
+    .about .container .about-header {
+        width: 490px;
+    }
+
+    .about .container .description {
+        width: 500px;
+    }
+
+    .about .container .description p {
+        width: 230px;
+    }
+
+    .about .container .partners {
+        width: 490px;
+    }
+
+    .about .container .market-leaders .item {
+        width: 482px;
+    }
+
+    .about .container .market-leaders .item .market-leaders-description {
+        padding: 0;
+    }
+
+    .how-works .container .steps {
+        width: 490px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .how-works .container .steps .step-item {
+        width: 450px;
+    }
+
+    .how-works .container .steps .step-item .steps-item-header {
+        width: 270px;
+    }
+
+    .how-works .container .steps .step-item .steps-item-description {
+        width: 100%;
+    }
+
+    .faq .container .answers .details-faq {
+        width: 435px;
+    }
+
+    .faq .container .answers .details-faq .summary-faq .round-button {
+        min-width: 34px;
+    }
+
+    .footer .container .links-list {
+        width: 500px;
+    }
+
+    .footer .rights {
+        width: 455px;
+    }
+
+    .footer .risk-disclaimer {
+        max-width: 455px;
+    }
+
+    .footer .container .legal-disclaimers .spoilers .details {
+        width: 455px;
     }
 }
 
+@media ( max-device-width: 864px ) {
+    body {
+        width: 863px;
+    }
+}
+
+@media ( max-device-width: 768px ){
+    body {
+        width: 854px;
+    }
+}
+
+
 @media ( max-device-width: 480px ) {
     body {
-        width: 880px;
+        width: 1000px;
         margin: 0;
         overflow-x: hidden;
-    }
-
-    header {
-        width: 840px;
-    }
-    .menu-icon {
-        right: -400px;
     }
 
     .right-vector {
         right: -400px;
         display: none;
-    }
-
-
-    .menu-container {
-        position: absolute;
-        right: -500px;
-        width: 600px;
-        height: 800px;
-    }
-    
-    .menu-container .hide {
-        float: right;
-        margin: 15px;
-        font-size: 20px;
-    }
-    
-    .menu-container .hide:hover {
-        cursor: pointer;
-    }
-    
-    .menu-container .menu-links {
-        width: 100%;
-        height: 400px;
-    }
-    
-    .menu-container .menu-links a {
-        font-size: 50px;
-        margin-bottom: 50px;
-    }
-
-    .menu-container .menu-cannabis {
-        top: 550px;
     }
 
     header .exposure {
@@ -2133,13 +2356,20 @@ details[open] summary .round-button {
     }
 
     header .exposure .caption {
-        font-size: 14px;
+        font-size: 30px;
+    }
+
+    header .exposure .country p {
+        font-size: 35px;
+        line-height: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     header .container .main-content img {
-        height: 38.93px;
-        width: 155.64px;
-
+        height: auto;
+        width: 260.64px;
+        margin: 0;
     }
 
     .intro .container .content .video-container {
@@ -2152,35 +2382,139 @@ details[open] summary .round-button {
     }
 
     .intro .container .content .video-container .video-header h1 {
-        font-size: 36px;
+        font-size: 85px;
+        line-height: 90px;
         text-align: center;
     }
 
     .intro .container .content .video-container .video-header p {
         text-align: center;
+        font-size: 50px;
+    }
+
+    .intro .container .content .video-container .video {
+        height: 451px;
+    }
+
+    .intro .container .content .video-container iframe {
+        border-radius: 50px;
+    }
+
+    .intro .container .content .gtd-form-step-2-exness {
+        width: 800px;
+        height: 640px;
+        border-radius: 80px;
+    }
+
+    .intro .container .content .gtd-form-step-2-exness .register-form-tab-2 h3 {
+        font-size: 45px;
+        margin-bottom: 0;
+    }
+
+    .intro .container .content .gtd-form-step-2-exness .register-form-tab-2 .step-2-broker-logo-wrapper img {
+        width: 300px;
+    }
+    
+    .intro .container .content .gtd-form-step-2-exness .register-form-tab-2 button {
+        height: 100px;
+        width: 463.07px;
+        margin-bottom: 50px;
+        font-size: 35px;
+        border-radius: 70px;
+    }
+
+    .intro .container .content .gtd-form-step-2-exness .register-form-tab-2 .step-2-text-rapper {
+        font-size: 37px;
+        line-height: 150%;
     }
 
     .intro .container .content .form-container {
-        width: 624px;
-
+        width: 800px;
+        border-radius: 90px;
     }
 
-    .intro .container .content .form-container h2 {
+    .intro .container .content .form-container img {
+        width: 350px;
+    }
+
+    .intro .container .content .form-container h2,
+    .intro .container .content .form-container h3 {
         width: 500px;
-        font-size: 18px;
+        font-size: 35px;
+        line-height: 150%;
+    }
+
+    .intgrtn-input.intgrtn-area-flags-holder .intgrtn-areas-dropdown.intgrtn-opened {
+        width: 550px;
+        height: 300px;
+    }
+
+    .intgrtn-input.intgrtn-area-flags-holder .intgrtn-areas-dropdown .intgrtn-flag-single-item .intgrtn-area-name, 
+    .intgrtn-input.intgrtn-area-flags-holder .intgrtn-areas-dropdown .intgrtn-flag-single-item .intgrtn-area-code {
+        font-size: 42px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area .intgrtn-phone-code, 
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+        font-size: 45px;
+    }
+
+    .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group {
+        max-width: 712px;
+        height: 75px;
+        margin-top: 30px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-password .intgrtn-password-eye-icon {
+        width: 60px;
+        height: 60px;
+        background-size: 50px auto;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input.intgrtn-area-flags-holder .intgrtn-selected-area::after{
+        font-size: 20px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area {
+        margin-top: 4px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group input {
+        width: 630px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-message-error {
+        font-size: 50px;
     }
 
     .intro .container .content .form-container form input {
-        width: 531.81px;
+        width: 711.81px;
+        height: 75px;
+        font-size: 35px;
     }
-    .intro .container .content .form-container form input[type = submit]{
-        height: 65.39px;
-        width: 463.07px;
+    .intro .container .content .form-container form button{
+        height: 130px;
+        width: 600px;
+        margin-top: 50px;
         margin-bottom: 50px;
+        border-radius: 70px;
+        font-size: 35px;
     }
 
     .intro .container .content .form-container form .checkboxes {
-        width: 531.81px;
+        width: 714px;
+    }
+
+    .intro .container .content .form-container form input[type=checkbox] {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+    }
+
+    .intro .container .content .form-container form .checkboxes label span {
+        font-size: 35px;
+        line-height: 150%;
+        margin-bottom: 30px;
     }
 
     .about .container .about-header {
@@ -2189,9 +2523,14 @@ details[open] summary .round-button {
         line-height: 50px;
     }
 
+    .about .container .description {
+        width: 800px;
+    }
+
     .about .container .description p {
-        width: 350px;
-        font-size: 25px;
+        width: 380px;
+        font-size: 45px;
+        line-height: 150%;
     }
 
     .about .container .about-items .item {
@@ -2255,18 +2594,19 @@ details[open] summary .round-button {
     }
 
     .about .container .market-leaders .item {
-        width: 630.51px;
-        height: 600px;
+        width: 800px;
+        height: auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: flex-start;
+        border-radius: 70px;
     }
 
     .about .container .market-leaders .item .market-leaders-description {
-        height: auto;
-        width: 330px;
-        font-size: 20px;
+        width: 520px;
+        font-size: 35px;
+        line-height: 150%;
         margin-top: 0;
         margin-bottom: 20px;
         padding: 0;
@@ -2275,16 +2615,18 @@ details[open] summary .round-button {
     .about .container .market-leaders .item .details-container {
         align-items: center;
         flex-direction: column;
+        width: 220px;
         height: auto;
     }
 
     .about .container .market-leaders .item h3 {
         display: inline-block;
-        font-size: 30px;
+        font-size: 50px;
+        line-height: 60px;
         padding-left: 20px;
         padding-right: 20px;
         width: 100%;
-        height: 70px;
+        height: auto;
     }
 
     .about .container .about-items .item {
@@ -2315,7 +2657,7 @@ details[open] summary .round-button {
     }
 
     .about .container .market-leaders .item .details-container .details-inner p {
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .about .container .market-leaders .item .details-container img {
@@ -2343,6 +2685,7 @@ details[open] summary .round-button {
     .how-works .container .steps {
         flex-wrap: wrap;
         justify-content: flex-start;
+        width: 850px;
     }
 
     .how-works .container .steps hr {
@@ -2353,8 +2696,7 @@ details[open] summary .round-button {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
-        margin-left: 50px;
-        width: 550px;
+        width: 100%;
     }
 
     .how-works .container .steps .step-item img {
@@ -2364,7 +2706,7 @@ details[open] summary .round-button {
 
     .how-works .container .steps .step-item .step-header {
         width: 100%;
-        font-size: 40px;
+        font-size: 65px;
         text-align: left;
         display: flex;
         justify-content: flex-start;
@@ -2373,15 +2715,15 @@ details[open] summary .round-button {
     }
 
     .how-works .container .steps .step-item .steps-item-header {
-        width: 400px;
-        font-size: 40px;
+        width: 500px;
+        font-size: 55px;
         text-align: left;
         margin-left: 30px;
     }
 
     .how-works .container .steps .step-item .steps-item-description {
-        font-size: 30px;
-        width: 550px;
+        font-size: 50px;
+        width: 100%;
     }
 
     .how-works .container .steps .steps-headers {
@@ -2426,24 +2768,34 @@ details[open] summary .round-button {
         height: auto;
     }
 
-    .faq .container .answers details {
+    .faq .container .faq-header {
+        font-size: 60px;
+    }
+
+    .faq .container .faq-caption {
+        font-size: 35px;
+    }
+
+    .faq .container .answers .details-faq {
         width: 800px;
-        height: 80px;
         margin-bottom: 30px;
     }
 
-    .faq .container .answers details summary{
-        height: 80px;
-        font-size: 25px;
+    .faq .container .answers .details-faq .summary-faq{
+        height: 97px;
+        font-size: 35px;
+        line-height: 35px;
+        border-radius: 50px;
     }
 
-    .faq .container .answers details summary .round-button {
+    .faq .container .answers .details-faq .summary-faq .round-button {
         width: 60px;
+        min-width: 60px;
         height: 60px;
         font-size: 50px;
     }
 
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 32px;
         line-height: 50px;
     }
@@ -2461,21 +2813,26 @@ details[open] summary .round-button {
 
     .footer .container .links-list {
         width: 790px;
-        justify-content: space-between;
+        justify-content: center;
+        flex-direction: column;
     }
 
     .footer .container .links-list a {
-        font-size: 30px;
+        font-size: 50px;
     }
 
     .footer .rights {
         max-width: 790px;
-        font-size: 25px;
+        font-size: 50px;
+    }
+
+    .footer .risk-disclaimer h2 {
+        font-size: 41px;
     }
 
     .footer .risk-disclaimer p {
         max-width: 790px;
-        font-size: 25px;
+        font-size: 50px;
     }
     .footer .container hr {
         width: 730px;
@@ -2505,13 +2862,9 @@ details[open] summary .round-button {
 
 @media ( max-device-width: 320px ) {
     body {
-        width: 870px;
+        width: 1040px;
         margin: 0;
         overflow-x: hidden;
-    }
-
-    header {
-        width: 840px;
     }
 
     .menu-icon {
@@ -2524,29 +2877,35 @@ details[open] summary .round-button {
     }
 
     header .exposure {
-        display: flex;
         flex-direction: column;
         top: 120px;
-        width: 310px;
+        left: 50%;
+        margin-left: -200px;
+        width: 400px;
         align-items: flex-start;
+        margin-right: 0;
+    }
+
+    header .exposure .caption {
+        font-size: 55px;
+        line-height: 100%;
     }
 
     header .exposure .country {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         width: 100%;
     }
 
     header .exposure .country p {
-        font-size: 25px;
-        margin-left: 10px;
+        font-size: 55px;
+        line-height: 100%;
     }
 
-    header .exposure .caption {
-        font-size: 25px;
+    header .exposure .country img {
+        width: 100px;
+        height: 100px;
     }
-  
 
     header .container {
         align-items: flex-start;
@@ -2554,13 +2913,13 @@ details[open] summary .round-button {
 
     header .container .main-content img {
         margin-top: 10px;
+        margin-left: 0;
         height: 100px;
         width: 400px;
-
     }
 
     .intro {
-        margin-top: 100px;
+        margin-top: 350px;
     }
 
     .intro .container .content .video-container {
@@ -2579,55 +2938,60 @@ details[open] summary .round-button {
     }
 
     .intro .container .content .video-container .video-header p {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .intro .container .content .video-container .video {
         height: 450px;
     }
 
-    .intro .container .content .form-container {
-        width: 624px;
+    .intro .container .content .video-container iframe {
+        border-radius: 50px;
+    }
 
+    .intro .container .content .form-container {
+        border-radius: 100px;
     }
 
     .intro .container .content .form-container h2 {
-        width: 500px;
-        font-size: 40px;
-        line-height: 50px;
+        width: 700px;
+        font-size: 62px;
     }
 
     .intro .container .content .form-container h3 {
-        font-size: 40px;
+        font-size: 50px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area {
+        margin-top: 0px;
+    }
+
+    .intro .container .content .form-container .intgrtn-form-signup .intgrtn-input-holder-phone .intgrtn-input-group .intgrtn-area-flags-holder .intgrtn-selected-area .intgrtn-phone-code {
+        font-size: 50px;
     }
 
     .intro .container .content .form-container form input {
-        width: 531.81px;
-        font-size: 30px;
+        font-size: 52px;
+        margin-bottom: 50px;
         padding-bottom: 5px;
     }
-    .intro .container .content .form-container form input[type = submit]{
-        height: 100px;
-        width: 463.07px;
-        margin-bottom: 50px;
-        border-radius: 50px;
-        font-size: 25px;
-    }
 
-    .intro .container .content .form-container form .checkboxes {
-        width: 531.81px;
+    .intro .container .content .form-container form button{
+        margin-bottom: 50px;
+        border-radius: 70px;
+        font-size: 30px;
     }
 
     .intro .container .content .form-container form input[type=checkbox] {
-        width: 40px;
-        height: 40px;
+        width: 70px;
+        min-width: 70px;
+        height: 70px;
     }
 
-    
-
     .intro .container .content .form-container form .checkboxes label span {
-        font-size: 30px;
-        line-height: 50px;
+        font-size: 50px;
+        line-height: 55px;
+        margin-bottom: 30px;
     }
 
     .about .container .about-header {
@@ -2635,9 +2999,13 @@ details[open] summary .round-button {
         font-size: 40px;
     }
 
+    .about .container .description {
+        width: 850px;
+    }
+
     .about .container .description p {
-        width: 350px;
-        font-size: 30px;
+        width: 405px;
+        font-size: 55px;
         font-weight: 400;
         line-height: 50px;
     }
@@ -2648,6 +3016,7 @@ details[open] summary .round-button {
         justify-content: space-between;
         padding-left: 10px;
         padding-right: 10px;
+        border-radius: 85px;
     }
 
     .about .container .about-items .item .item-detail {
@@ -2688,13 +3057,12 @@ details[open] summary .round-button {
     }
 
     .about .container .about-header {
-        font-size: 60px;
+        font-size: 70px;
         line-height: 70px;
     }
 
     .about .container .market-leaders .item {
-        width: 700px;
-        height: 1300px;
+        height: auto;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -2702,9 +3070,9 @@ details[open] summary .round-button {
     }
 
     .about .container .market-leaders .item .market-leaders-description {
+        width: 510px;
         height: auto;
-        width: 362px;
-        font-size: 30px;
+        font-size: 45px;
         margin-top: 0;
         margin-bottom: 20px;
         padding-left: 20px;
@@ -2720,7 +3088,7 @@ details[open] summary .round-button {
     }
 
     .about .container .market-leaders .item h3 {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .about .container .market-leaders .item .details-container .details-inner {
@@ -2753,23 +3121,16 @@ details[open] summary .round-button {
     }
 
     .how-works .container>h2 {
-        font-size: 50px;
+        font-size: 70px;
     }
 
     .how-works .container .steps {
         flex-wrap: wrap;
     }
 
-    .how-works .container .steps hr.third-line {
-       display: block;
-    }
-
     .how-works .container .steps .step-item {
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        margin-left: 50px;
-        width: 550px;
     }
 
     .how-works .container .steps .step-item .step-header {
@@ -2785,15 +3146,15 @@ details[open] summary .round-button {
     }
 
     .how-works .container .steps .step-item .steps-item-header {
-        width: 400px;
         height: auto;
-        font-size: 50px;
+        font-size: 65px;
+        line-height: 70px;
         text-align: left;
         margin-left: 30px;
     }
 
     .how-works .container .steps .step-item .steps-item-description {
-        font-size: 30px;
+        font-size: 60px;
     }
 
     .how-works .container .steps .steps-headers {
@@ -2851,33 +3212,34 @@ details[open] summary .round-button {
     }
 
     .faq .container .faq-caption {
-        font-size: 40px;
+        font-size: 60px;
     }
 
     .faq .container .answers {
         height: auto;
     }
 
-    .faq .container .answers details {
-        width: 800px;
-        height: 100px;
+    .faq .container .answers .details-faq {
+        width: 850px;
         margin-bottom: 30px;
     }
 
-    .faq .container .answers details summary {
-        font-size: 30px;
-        height: 100px;
-        line-height: 50px;
+    .faq .container .answers .details-faq .summary-faq {
+        font-size: 51px;
+        height: 130px;
+        line-height: 55px;
+        border-radius: 70px;    
     }
 
-    .faq .container .answers details summary .round-button {
+    .faq .container .answers .details-faq .summary-faq .round-button {
         width: 70px;
+        min-width: 70px;
         height: 70px;
         margin: 20px;
         font-size: 40px;
     }
 
-    .faq .container .answers details p {
+    .faq .container .answers .details-faq p {
         font-size: 45px;
         line-height: 60px;
     }

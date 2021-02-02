@@ -1,30 +1,17 @@
-<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
         <title>Green Gold</title>
         <link rel = "stylesheet" href = "css/style.css"/>
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-         <!-- BEGIN intgrtn -->
-         <script type="text/javascript">
-            (function (d) {
-                if (window.intgrtn) {
-                    return;
-                }
-                var s = d.createElement("script");
-                var date = new Date();
-                s.src = "//mistertrack.click/api/v1/integration/sdk.js?v=" + date.getFullYear().toString() + date.getMonth().toString() + date.getDay().toString() + date.getHours().toString();
-                d.getElementsByTagName("head")[0].appendChild(s);
-            }(document));
-        </script>
-        <!-- END intgrtn -->
+        <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
     </head>
-    <body>
-        <div class="wrapper">
+<body>
+       <div class="wrapper">
             <header>
                 <div class = "container">
                     <div class = "main-content">
@@ -36,7 +23,8 @@
                 <div class = "exposure">
                     <p class = "caption">Exclusive Exposure for</p>
                     <div class = "country">
-                        <img id = "flag"><p id = "location"></p>
+                        <img id = "flag">
+                        <p><span id="location"></span> <span data-i18n>RESIDENTS</span></p>
                     </div>
                 </div>
                 <img class = "right-vector" src = "images/Vector-1.png">
@@ -49,57 +37,36 @@
                         <div class = "content">
                             <div class = "video-container">
                                 <div class = "video-header">
-                                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500">'High' on Green Stocks</h1>
-                                    <p data-aos="fade-down" data-aos-duration="1000">The Cannabis industry is about to explode in value.
-                                        Invest before the secret is out of the bag.
-                                    </p>
+                                    <h1 data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" data-i18n>'High' on Green Stocks</h1>
+                                    <p data-aos="fade-down" data-aos-duration="1000" data-i18n>The Cannabis industry is about to explode in value.Invest before the secret is out of the bag.</p>
                                 </div>
-                                <div class = "video" data-aos="fade-right" data-aos-duration="1000">
+                                <div class = "video" data-aos="fade-down" data-aos-duration="1000">
                                     <iframe id = "iframe-video" width="100%" height="100%" src="https://www.youtube.com/embed/4T1iJ9BnQfo"
                                      frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-                                      gyroscope; picture-in-picture" allowfullscreen>
+                                      gyroscope; picture-in-picture;" allowfullscreen>
                                     </iframe>
                                 </div>
                             </div>
-                            <div id = "form2" class = "form-container hidden-form2" data-aos="fade-left" data-aos-duration="1500">
-                                <h3>STEP 2</h3>
-                                <h2 class = "form-header">Open an account with Exness & setup your watchlist!</h2>
-                                <img class = "image-step2" src = "images/exness-logo.png">
-                                <form>
-                                    <input type = "submit" value = "Open Account"/>
-                                </form>
-                            </div> 
-                            <div id = "form" class = "form-container" data-aos="fade-left" data-aos-duration="1000">
+                            <div id = "form" class = "form-container" data-aos="fade-up" data-aos-duration="1000">
                                 <img src = "images/logo.png">
-                                <h2 class = "form-header"><span>Global Cannabis Industry is worth Billions.</span></br>
-                                    Setup your watchlist account, 
-                                    follow the stocks, get in on the action!
+                                <h2 class = "form-header"><span data-i18n>Global Cannabis Industry is worth Billions.</span></br>
+                                    <span data-i18n>Setup your watchlist account, follow the stocks, get in on the action!</span>
                                 </h2>
-                                <h3>STEP 1</h3>
-                                <form>
-                                    <input type = "text" placeholder="First Name"/>
-                                    <input type = "text" placeholder="Last Name"/>
-                                    <input type = "email" placeholder="Email adress"/>
-                                    <div class="checkboxes">
-                                        <label>
-                                            <input type="checkbox"><span>By checking this box you agree to subscribe to Traders</br>
-                                            Expert & its affiliates brand assets newsletter</span>
-                                        </label>
-                                        <label>
-                                            <input type="checkbox"><span>By checking this box you agree to our
-                                                <a href="https://traders.expert/terms-conditions/" target="_blank">Terms</a>,
-                                                <a href="https://traders.expert/privacy-policy/" target="_blank">Privacy</a> &amp; 
-                                                <a href="https://traders.expert/spam-disclaimer/" target="_blank">Spam Disclaimer</a>
-                                            </span>
-                                        </label>
-                                        <label>
-                                            <input type="checkbox"><span>By checking this box you agree to our
-                                                <a href="https://traders.expert/privacy-policy/" target="_blank">GDPR</a> terms
-                                            </span>
-                                        </label>
+                                <h3><span data-i18n>STEP</span> <span id = "form-step"></span></h3>
+                                <div class="bf-content gtd-form-step-1 signup-form-wrapper" data-subject="slide-wrapper">
+                                    <div data-intgrtn-form-optin="" data-intgrtn-button-submit-text="Join Now"></div>
+                                </div>
+                                <div class="bf-content gtd-form-step-2 signup-form-wrapper hidden" data-subject="slide-wrapper"></div>
+                            </div>  
+                            <div class="bf-content gtd-form-step-2-exness hidden">
+                                <div class="register-form-tab register-form-tab-2">
+                                    <h3 data-i18n>STEP 2</h3>
+                                    <div class="step-2-text-rapper" data-i18n>Open an account with Exness & setup your watchlist!</div>
+                                    <div class="step-2-broker-logo-wrapper">
+                                        <img src="images/exness-logo.png" alt="exness" class="step-2-broker-logo">
                                     </div>
-                                    <input id = "submit-button" type = "submit" value = "JOIN COMMUNITY"/>
-                                </form>
+                                    <button class="register-form-button btn submit-btn" data-i18n>Open Account</button>
+                                </div>
                             </div>   
                         </div>                                                                          
                     </div>
@@ -109,31 +76,19 @@
                 </section>
                 <section id = "about" class = "about">
                     <div class = "container">
-                        <h2 class = "about-header">Why is the Cannabis industry important? Here's what you should know:
-                        </h2>
+                        <h2 class = "about-header" data-i18n>Why is the Cannabis industry important? Here's what you should know:</h2>
                         <div class = "description">
-                            <p>Why should you even think about the cannabis market as an investment or future option? Well… This is a 
-                                market which has been showing an average yearly growth of over 65%! The total market cap (Value) of 
-                                cannabis companies traded on the capital markets currently stands at over $48 Billion and is forecasted 
-                                to grow to over $70 Billion by 2027.
+                            <p><span data-i18n>Why should you even think about the cannabis market as an investment or future option? Well… This is a market which has been showing an average yearly growth of over 65%! The total market cap (Value) of cannabis companies traded on the capital markets currently stands at over $48 Billion and is forecasted to grow to over $70 Billion by 2027.</span>
                             </br>
                             </br>
-                                Here we are, heading into 2021, dealing with a global pandemic and yet this industry is on a relentless rise, 
-                                with stocks like “Green Thumb Industries” and "Cresco Labs" exhibiting a yearly growth of 168% and 
-                                215% respectively. These are incredible numbers to observe, in a highly regulated industry. So now is 
-                                the right time to establish your Cannabis Stock watchlist and keep track of the industry's high 
-                                performers.
+                                <span data-i18n>Here we are, in 2021, still dealing with a global pandemic and yet this industry is on a relentless rise, with stocks like “Green Thumb Industries” and "Cresco Labs" exhibiting a yearly growth of 168% and 215% respectively. These are incredible numbers to observe, in a highly regulated industry. So now is the right time to establish your Cannabis Stock watchlist and keep track of the industry's high performers.</span>
                             </p>
                             <p>
-                                Classic stock investments such as bank stocks or stocks of big corporation like Microsoft, Apple 
-                                and others, are still reliable and solid; however, their annual growth and potential return on 
-                                investment is close to 3-5%. Cannabis Stocks on the other hand, exhibit an annual average return 
-                                of 65%; the comparative gains are therefore much higher.</br>
+                                <span data-i18n>Classic stock investments such as bank stocks or stocks of big corporation like Microsoft, Apple and others, are still reliable and solid; however, their annual growth and potential return on investment is close to 3-5%. Cannabis Stocks on the other hand, exhibit an annual average return of 65%; the comparative gains are therefore much higher.</span></br>
                             </br>
-                                The Cannabis market is the NEW “GOLD RUSH”. An investment today can potentially grow by 2-3 times in coming 
-                                years.</br>
+                                T<span data-i18n>The Cannabis market is the NEW “GOLD RUSH”. An investment today can potentially grow by 2-3 times in coming years.</span></br>
                             </br>
-                                Join us now and reap the benefits of The 'Green' Gold today!
+                                <span data-i18n>Join us now and reap the benefits of The 'Green' Gold today!</span>
                             </p>
                         </div>
                         <div class = "about-items">
@@ -144,28 +99,22 @@
                             <div class = "item" data-aos="zoom-in" data-aos-duration="1000">
                                 <img src = "images/icon 35 billion.png">
                                 <div class = "item-detail">
-                                    <h2>$48 Billion</h2>
-                                    <p>
-                                        Total industry Market Cap
-                                    </p>
+                                    <h2>$48 <span data-i18n>Billion</span></h2>
+                                    <p data-i18n>Total industry Market Cap</p>
                                 </div>
                             </div>
                             <div class = "item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
                                 <img src = "images/margin 1.png">
                                 <div class = "item-detail">
-                                    <h2>$610 Million</h2>
-                                    <p>
-                                        Cannabis Industry's Daily Volume
-                                    </p>
+                                    <h2>$610 <span data-i18n>Million</span></h2>
+                                    <p data-i18n>Cannabis Industry's Daily Volume</p>
                                 </div>
                             </div>
                             <div class = "item"  data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
                                 <img src = "images/benefits 1.png">
                                 <div class = "item-detail">
-                                    <h2>65% Growth</h2>
-                                    <p>
-                                        An Average yearly growth of over 65%
-                                    </p>
+                                    <h2>65% <span data-i18n>Growth</span></h2>
+                                    <p data-i18n>An Average yearly growth of over 65%</p>
                                 </div>
                             </div>
                         </div>  
@@ -185,360 +134,257 @@
                                 <img src = "images/image 24.png">
                             </div>
                         </div>
-                        <h2 class = "about-header">Who Leads the Cannabis industry? Here's our top 3 picks:</h2>  
+                        <h2 class = "about-header" data-i18n>Who Leads the Cannabis industry? Here's our top 3 picks:</h2>  
                         <div id = "market-leaders" class = "market-leaders">
-                            <div class = "item" data-aos="fade-right" data-aos-duration="1000">
-                                <h3>Green Thumb Industries Inc,  USA</h3>
-                                <p class = "market-leaders-description">Green Thumb Industries cultivates, 
-                                    manufactures, and distributes their 
-                                    medical-grade cannabis through brick 
-                                    and mortar dispensaries. Strains are 
-                                    grown at an industrial level before 
-                                    being sold through their national 
-                                    retail chain, RISE. They have several 
-                                    manufacturing facilities and dozens of retail
-                                    locations based across numerous states.
-                                </p>
+                            <div class = "item" data-aos="fade-down" data-aos-duration="1000">
+                                <h3 data-i18n>Green Thumb Industries Inc,  USA</h3>
+                                <p class = "market-leaders-description" data-i18n>Green Thumb Industries cultivates, manufactures, and distributes their medical-grade cannabis through brick and mortar dispensaries. Strains are grown at an industrial level before being sold through their national retail chain, RISE. They have several manufacturing facilities and dozens of retaillocations based across numerous states.</p>
                                 <div class = "details-container">
                                     <div class = "details-inner">
-                                        <p>Founded: <span>2002</span></p>
-                                        <p>Market Cap:<span>4,5 billion</span></p>
-                                        <p>Growth: <span>168%</span></p>
+                                        <p><span data-i18n>Founded</span>: <span>2002</span></p>
+                                        <p><span data-i18n>Market Cap</span>: <span><span>4,5</span> <span data-i18n>billion</span></span></p>
+                                        <p><span data-i18n>Growth</span>: <span>168%</span></p>
                                     </div>
                                     <img src = "images/logo(1).png">
                                 </div>
                             </div>
                             <div class = "item" data-aos="zoom-in" data-aos-duration="1000">
-                                <h3>Cresco Labs Inc,  USA</h3>
-                                <p class = "market-leaders-description">Cresco Labs has a number of production
-                                    facilities across several US states that 
-                                    supply a network of retail locations. Their 
-                                    area of expertise is the cultivation and 
-                                    manufacturing of cannabis for recreational 
-                                    and medicinal markets. Brands include Cresco, 
-                                    Reserve, Remedi, and Mindy’s Kitchen. Their 
-                                    product ranges are designed to span the wellness, 
-                                    food, and lifestyle sectors with oil, sublingual, 
-                                    and topical solutions available.
-                                </p>
+                                <h3 data-i18n>Cresco Labs Inc,  USA</h3>
+                                <p class = "market-leaders-description" data-i18n>Cresco Labs has a number of productionfacilities across several US states that supply a network of retail locations. Their area of expertise is the cultivation and manufacturing of cannabis for recreational and medicinal markets. Brands include Cresco, Reserve, Remedi, and Mindy’s Kitchen. Their product ranges are designed to span the wellness, food, and lifestyle sectors with oil, sublingual, and topical solutions available.</p>
                                 <div class = "details-container">
                                     <div class = "details-inner">
-                                        <p>Founded: <span>2013</span></p>
-                                        <p>Market Cap:<span>0,85 billion</span></p>
-                                        <p>Growth: <span>215%</span></p>
+                                        <p><span data-i18n>Founded</span>: <span>2013</span></p>
+                                        <p><span data-i18n>Market Cap</span>: <span><span>0,85</span> <span data-i18n>billion</span></span></p>
+                                        <p><span data-i18n>Growth</span>: <span>215%</span></p>
                                     </div>
                                     <img src = "images/logo-1.png">
                                 </div>
                             </div>
-                            <div class = "item" data-aos="fade-left" data-aos-duration="1000">
-                                <h3>Canopy Growth Corporation, Canada</h3>
-                                <p class = "market-leaders-description">CGC predominantly operates out of Canada. They specialized 
-                                    range of products includes cannabis & hemp, dried flower, oil, soft gel capsules and more. CGC 
-                                    is currently marked within the top 3 Cannabis stocks to watch.
-                                </p>
+                            <div class = "item" data-aos="fade-up" data-aos-duration="1000">
+                                <h3 data-i18n>Canopy Growth Corporation, Canada</h3>
+                                <p class = "market-leaders-description" data-i18n>CGC predominantly operates out of Canada. They specialized range of products includes cannabis & hemp, dried flower, oil, soft gel capsules and more. CGC is currently marked within the top 3 Cannabis stocks to watch.</p>
                                 <div class = "details-container">
                                     <div class = "details-inner">
-                                        <p>Founded: <span>2002</span></p>
-                                        <p>Market Cap:<span>4,5 billion</span></p>
-                                        <p>Growth: <span>168%</span></p>
+                                        <p><span data-i18n>Founded</span>: <span>2002</span></p>
+                                        <p><span data-i18n>Market Cap</span>: <span><span>4,5</span> <span data-i18n>billion</span></span></p>
+                                        <p><span data-i18n>Growth</span>: <span>168%</span></p>
                                     </div>
                                     <img src = "images/logo-2.png">
                                 </div>
                             </div>
                         </div>
                         <div data-aos="fade-up" data-aos-duration="1000">
-                            <a href = "#" id = "cta-button" class = "start-now-link">Create your Stock Watchlist</a>
+                            <a href = "#" id = "cta-button" class = "start-now-link" data-i18n>Create your Stock Watchlist</a>
                         </div>
                     </div>
                 </section>
                 <section id = "how-works" class = "how-works">
                     <div class = "container">
-                        <h2>HOW DOES IT WORK?</h2>
+                        <h2 data-i18n>HOW DOES IT WORK?</h2>
                         <div class = "steps">
-                            <div class = "step-item" data-aos="fade-right" data-aos-duration="1000">
-                                <p class = "step-header">Step #1</p>
+                            <div class = "step-item" data-aos="fade-down" data-aos-duration="1000">
+                                <p class = "step-header" data-i18n>Step #1</p>
                                 <img src = "images/icon fill out.png">
-                                <h2 class = "steps-item-header">
-                                    REGISTER THROUGH OUR PAGE
-                                </h2>
-                                <p class = "steps-item-description">
-                                    Once your registration is complete, you will automatically become the newest member of "CBD Rush Community". You will then be directed to one of our handpicked, regulated, partner brokers.
-                                </p>
+                                <h2 class = "steps-item-header" data-i18n>Register through our page</h2>
+                                <p class = "steps-item-description" data-i18n>Once your registration is complete, you will automatically become the newest member of "CBD Rush Community". You will then be directed to one of our handpicked, regulated, partner brokers.</p>
                             </div>
                             <hr/>
                             <div class = "step-item" data-aos="fade-down" data-aos-duration="1000">
-                                <p class = "step-header">Step #2</p>
+                                <p class = "step-header" data-i18n>Step #2</p>
                                 <img src = "images/icon account.png">
-                                <h2 class = "steps-item-header">
-                                    Fund Your Account
-                                </h2>
-                                <p class = "steps-item-description">
-                                    Like in any investment, you will need some capital (money) to get started. Most savvy traders 
-                                    start off with an investment ranging from $500 to $1000. However, you may begin with as little 
-                                    as $250 and grow as your account grows.
+                                <h2 class = "steps-item-header" data-i18n>Fund Your Account</h2>
+                                <p class = "steps-item-description" data-i18n>Like in any investment, you will need some capital (money) to get started. Most savvy traders start off with an investment ranging from $500 to $1000. However, you may begin with as little as $250 and grow as your account grows.
                                 </p>
                             </div>
                             <hr/>
-                            <div class = "step-item" data-aos="fade-left" data-aos-duration="1000">
-                                <p class = "step-header">Step #3</p>
+                            <div class = "step-item" data-aos="fade-up" data-aos-duration="1000">
+                                <p class = "step-header" data-i18n>Step #3</p>
                                 <img src = "images/icon start prof.png">
-                                <h2 class = "steps-item-header">
-                                    Start Trading
-                                </h2>
-                                <p class = "steps-item-description">
-                                    The moment your account is approved and you've funded it with your initial investment; you may 
-                                    begin trading in Cannabis stocks. 
-                                </p>
+                                <h2 class = "steps-item-header" data-i18n>Start Trading</h2>
+                                <p class = "steps-item-description" data-i18n>The moment your account is approved and you've funded it with your initial investment; you may begin trading in Cannabis stocks.</p>
                             </div>
                             <hr class = "third-line"/>
                         </div>
                         <div data-aos="fade-down" data-aos-duration="1000">
-                            <a href = "#form" id = "cta-button" class = "start-now-link">START NOW</a>
+                            <a href = "#form" id = "cta-button" class = "start-now-link" data-i18n>START NOW</a>
                         </div>
                         <img src = "images/image.png">
                     </div>
                 </section>
                 <section id = "faq" class = "faq">
                     <div class = "container">
-                        <h2 class = "faq-header">FAQ</h2>
-                        <p class = "faq-caption">Frequently Asked Questions</p>
+                        <h2 class = "faq-header" data-i18n>FAQ</h2>
+                        <p class = "faq-caption" data-i18n>Frequently Asked Questions</p>
                         <div class = "answers">
-                           <details data-aos="flip-up" data-aos-duration="1000">
-                               <summary> <div class = "round-button">+</div>How much can I earn from Cannabis Stocks?</summary>
-                                    <p>The average company growth on a year to year basis currently stands on 65%. Hoewever, some 
-                                        companies are showing higher percentages, so your ability to profit depends on the stock you 
-                                        choose to invest in and its growth potential.
-                                    </p>
-                           </details>
-                           <details data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
-                                <summary> <div class = "round-button">+</div>Where can I buy or trade Cannabis Stocks?</summary>
-                                <p>Most stocks are being traded on regulated stock markets and are available for purchase via licensed 
-                                    financial institutions. We also offer a variety of alternative investments you can make with 
-                                    additional brokers for both investing and buying stocks or stock contracts for difference.
-                                </p>
-                            </details>
-                            <details data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
-                                <summary> <div class = "round-button">+</div>How much time will it require from me?</summary>
-                                <p>Opening an account, verifying it and purchasing your first assets, takes about 5 minutes. 
-                                    But having said that, there is always more than just making a registration, depositing funds and 
-                                    buying a stock. It is advisable that you also budget some time for learning the ins and outs of 
-                                    trading. Our expert trading community provides education that covers all levels of trading; from 
-                                    beginner to pro. Make sure you check some of our partners' educational programmes. They will help 
-                                    take you and your trades to the next level.
-                                </p>
-                            </details>
-                            <details data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
-                                <summary> <div class = "round-button">+</div>Is my information safe?</summary>
-                                <p>We take data security and privacy very seriously. Both us and our recommended partners are in 
-                                    full compliance with KYC, AML, Privacy Policies, Terms of Use (EULA) and most importantly GDPR 
-                                    guidelines. So your information is safe as per the applicable laws and global data protection 
-                                    requirements.
-                                </p>
-                            </details>
-                            <details data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
-                                <summary> <div class = "round-button">+</div>What should I do next?</summary>
-                                <p>If you’ve decided to move forward and pursue this venture, please go ahead and create your watch 
-                                    list, set up an account with one of our recommended partners and you'll be good to go!
-                                </p>
-                            </details>
+                           <div class = "details-faq" data-aos="flip-up" data-aos-duration="1000">
+                                <div class = "summary-faq"> <div class = "round-button">+</div data-i18n>How much can I earn from Cannabis Stocks?</div>
+                                <div class = "opening">
+                                    <p data-i18n>The average company growth on a year to year basis currently stands on 65%. Hoewever, some companies are showing higher percentages, so your ability to profit depends on the stock you choose to invest in and its growth potential.</p>
+                                </div>
+                           </div>
+                           <div class = "details-faq" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100">
+                                <div class = "summary-faq"> <div class = "round-button">+</div data-i18n>Where can I buy or trade Cannabis Stocks?</div>
+                                <div class = "opening">
+                                    <p data-i18n>Most stocks are being traded on regulated stock markets and are available for purchase via licensed financial institutions. We also offer a variety of alternative investments you can make with additional brokers for both investing and buying stocks or stock contracts for difference.</p>
+                                </div>
+                            </div>
+                            <div class = "details-faq" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="200">
+                                <div class = "summary-faq"> <div class = "round-button">+</div data-i18n>How much time will it require from me?</div>
+                                <div class = "opening">
+                                    <p data-i18n>Opening an account, verifying it and purchasing your first assets, takes about 5 minutes. But having said that, there is always more than just making a registration, depositing funds and buying a stock. It is advisable that you also budget some time for learning the ins and outs of trading. Our expert trading community provides education that covers all levels of trading; from beginner to pro. Make sure you check some of our partners' educational programmes. They will help take you and your trades to the next level.</p>
+                                </div>
+                            </div>
+                            <div class = "details-faq" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                                <div class = "summary-faq"> <div class = "round-button">+</div data-i18n>Is my information safe?</div>
+                                <div class = "opening">
+                                    <p data-i18n>We take data security and privacy very seriously. Both us and our recommended partners are in full compliance with KYC, AML, Privacy Policies, Terms of Use (EULA) and most importantly GDPR guidelines. So your information is safe as per the applicable laws and global data protection requirements.</p>
+                                </div>    
+                            </div>
+                            <div class = "details-faq" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
+                                <div class = "summary-faq"> <div class = "round-button">+</div data-i18n>What should I do next?</div>
+                                <div class = "opening">
+                                    <p data-i18n>If you’ve decided to move forward and pursue this venture, please go ahead and create your watch list, set up an account with one of our recommended partners and you'll be good to go!</p>
+                                </div>
+                            </div>
                         </div>
                     </div> 
                 </section>
             </main>
             <footer class = "footer">
-                <div class = "container">
-                    <img src = "images/logo footer.png">
-                    <div class = "links-list">
-                            <a href = "https://traders.expert/risk-warning/" target="_blank">Risk Disclaimer</a>
-                             <span>|</span>
-                            <a href = "https://traders.expert/privacy-policy/" target="_blank">Privacy Policy</a>
-                             <span>|</span>
-                            <a href = "https://traders.expert/contact-us/" target="_blank">Report Abuse</a>
-                             <span>|</span>
-                            <a href = "https://traders.expert/terms-conditions/" target="_blank">Terms</a>
-                             <span>|</span>
-                            <a href = "https://traders.expert/privacy-policy/" target="_blank">GDPR</a>
-                             <span>|</span>
-                            <a href = "https://traders.expert/contact-us/" target="_blank">Contact Us</a>
-                    </div>
-                    <p class = "rights">© 2020 All Rights Reserved - CBD Rush is an advertorial web page under Traders Expert, 
-                        which is a <a href = "https://mr.click/" target="_blank">
-                        Mr.Click</a> brand, operated by Blue Media LTD.
-                    </p>
-                    <div class = "risk-disclaimer">
-                        <h2>BROKER'S ORIGINAL RISK WARNING</h2>
-                        <p>CFDs are leveraged products that incur a high level of risk and can result in the loss of all your capital and 
-                            may therefore not be suitable for all investors. You should not risk more than you are prepared to lose. 
-                            Before deciding to trade, please ensure you understand the risks involved, take the level of your experience 
-                            into consideration and seek independent advice if necessary. We strictly do not provide investment advice. 
-                            To read our full risk disclosure statement, please click here. The Company does not offer its service to 
-                            residents of certain jurisdictions such as: Australia, New Zealand, Canada, Iran, North Korea and Belgium. 
-                            USA nationals are not accepted regardless of the country of residence. The information on this site is not 
-                            intended for distribution to, or use by any person in any country where such distribution or use would be 
-                            contrary to the local law or regulation, or to any person under the age of 18. It is the responsibility of 
-                            the visitors to this site to ascertain the terms of and comply with all local law or regulation.
-                        </p>
-                    </div>
-                    <hr noshade/>
-                    <div class = "legal-disclaimers">
-                        <h2>Legal Disclaimers</h2>
-                        <div class = "spoilers">
-                            <div class = "column-spoilers">
-                                <div class = "details">
-                                    <div class = "summary">
-                                        <p>Copyrights Disclaimer</p>
-                                        <i class = "arrow"></i>
-                                    </div>
-                                    <div class = "opening">
-                                        <p>
-                                            "CBD Rush" or any associated brand or entity is not promoting or using the displayed company logos, 
-                                            nor do we offer the purchase of these companies. This is used only for the matter of example and 
-                                            information.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class = "details">
-                                    <div class = "summary">
-                                        <p>SITE’S EARNING DISCLAIMER</p>
-                                        <i class = "arrow"></i>
-                                    </div>
-                                    <div class = "opening">
-                                        <p>
-                                            Please note that Mr.Click and its affiliated domains receives advertising fees for 
-                                            directing users to open an account with the financial institutions/advertisers and/or for 
-                                            driving traffic to the advertiser website.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class = "details">
-                                    <div class = "summary">
-                                        <p>SITE RISK DISCLOSURE</p>
-                                        <i class = "arrow"></i>
-                                    </div>
-                                    <div class = "opening">
-                                        <p>
-                                            This web page does not accept any liability for loss or damage as a result of reliance 
-                                            on the information contained within this website; this includes education material, price 
-                                            quotes and charts, and analysis. Please be aware of the risks associated with trading the 
-                                            financial markets; never invest more money than you can risk losing. The risks involved in 
-                                            trading Stocks, Shares, Forex, CFDs and Cryptocurrencies may not be suitable for all 
-                                            investors. We do not retain responsibility for any trading losses you might face as a result 
-                                            of using the data hosted on this site.
-                                        </p>
-                                    </div>
-                                </div>
+            <div class = "container">
+                <img class = "footer-logo" src = "images/logo footer.png">
+                <div class = "links-list">
+                    <a href = "https://traders.expert/risk-warning/" target="_blank" data-i18n>Risk Disclaimer</a>
+                     <span>|</span>
+                    <a href = "https://traders.expert/privacy-policy/" target="_blank" data-i18n>Privacy Policy</a>
+                     <span>|</span>
+                    <a href = "https://traders.expert/contact-us/" target="_blank" data-i18n>Report Abuse</a>
+                     <span>|</span>
+                    <a href = "https://traders.expert/terms-conditions/" target="_blank" data-i18n>Terms</a>
+                     <span>|</span>
+                    <a href = "https://traders.expert/privacy-policy/" target="_blank" data-i18n>GDPR</a>
+                     <span>|</span>
+                    <a href = "https://traders.expert/contact-us/" target="_blank" data-i18n>Contact Us</a>
+                </div>
+                <p class = "rights"><span data-i18n>© 2021 All Rights Reserved - CBD Rush is an advertorial web page under Traders Expert, which is a</span> <a href = "https://mr.click/" target="_blank">Mr.Click</a> <span data-i18n>brand, operated by Blue Media LTD.</span></p>
+                <div class = "risk-disclaimer">
+                <h2 data-i18n>BROKER'S ORIGINAL RISK WARNING</h2>
+                <p class = "js-risk-disclaimer" data-i18n>CFDs are leveraged products that incur a high level of risk and can result in the loss of all your capital and may therefore not be suitable for all investors. You should not risk more than you are prepared to lose. Before deciding to trade, please ensure you understand the risks involved, take the level of your experience into consideration and seek independent advice if necessary. We strictly do not provide investment advice. To read our full risk disclosure statement, please click here. The Company does not offer its service to residents of certain jurisdictions such as: Australia, New Zealand, Canada, Iran, North Korea and Belgium. USA nationals are not accepted regardless of the country of residence. The information on this site is not intended for distribution to, or use by any person in any country where such distribution or use would be contrary to the local law or regulation, or to any person under the age of 18. It is the responsibility of the visitors to this site to ascertain the terms of and comply with all local law or regulation.</p>
+                </div>
+                <hr noshade/>
+                <div class = "legal-disclaimers">
+                <h2 data-i18n>Legal Disclaimers</h2>
+                <div class = "spoilers">
+                    <div class = "column-spoilers">
+                        <div class = "details">
+                            <div class = "summary">
+                                <p data-i18n>Copyrights Disclaimer</p>
+                                <i class = "arrow"></i>
                             </div>
-                            <div class = "column-spoilers">
-                                <div class = "details">
-                                    <div class = "summary">
-                                        <p>REGULATION & HIGH RISK INVESTMENT WARNING</p>
-                                        <i class = "arrow"></i>
-                                    </div>
-                                    <div class = "opening">
-                                        <p>
-                                            Trading Forex, CFDs and Cryptocurrencies is highly speculative, carries a level of risk and 
-                                            may not be suitable for all investors. You may lose some or all of your invested capital, 
-                                            therefore you should not speculate with capital that you cannot afford to lose. Please click 
-                                            here to read a full risk warning.</br>
-                                        </br>
-                                            This web page is a part of Mr.Click marketing and advertising agency which does not gain or 
-                                            lose profits based on your trading results and operates as a marketing and advertising 
-                                            provider, by referring potential / interested individuals across the globe to regulated 
-                                            financial institutions. In addition, this web page is not a financial services firm and does 
-                                            not operate as a financial services firm and is only used as a marketing tool by third party 
-                                            advertisers and financial institutions to attract customers. </br>
-                                    </br>
-                                            We ask all of our web page visitors to check and decide whether the broker you were connected 
-                                            to applies to all local rules and regulations and is regulated in your country jurisdiction and 
-                                            is allowed to receive customers from the location you are in, before you fund your account with the broker and start trading with it, as It is your obligation to verify the above. 
-                                            Please feel free to contact us or report back (by clicking “Contact Us”) if you find that the 
-                                            broker assigned to you is not regulated in your jurisdiction so we can cancel your account 
-                                            accordingly.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class = "details">
-                                    <div class = "summary">
-                                        <p>LEGAL RESTRICTIONS</p>
-                                        <i class = "arrow"></i>
-                                    </div>
-                                    <div class = "opening">
-                                        <p>
-                                            Without limiting the mentioned provisions, you understand that laws regarding 
-                                            financial contracts vary throughout the world, and it is your responsibility to make 
-                                            sure you properly comply with any law, regulation or guideline in your country of residence 
-                                            regarding the use of the Site. To avoid any doubt, the ability to access our Site does not 
-                                            necessarily mean that our Services and/or your activities through the Site are legal under 
-                                            the laws, regulations or directives relevant to your country of residence.</br>
-                                        </br>
-                                            If you feel you landed on this page by wrong doings of a 3rd party website/promoter please 
-                                            report it by clicking Report Abuse or Contact Us links at the footer.We have placed cookies 
-                                            on your computer to help improve your experience when visiting this website. You can change 
-                                            cookie settings on your computer at any time. Use of this website indicates your acceptance 
-                                            of this website's Privacy Policy.
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class = "opening">
+                                <p data-i18n>"CBD Rush" or any associated brand or entity is not promoting or using the displayed company logos, nor do we offer the purchase of these companies. This is used only for the matter of example and information.</p>
+                            </div>
+                        </div>
+                        <div class = "details">
+                            <div class = "summary">
+                                <p data-i18n>SITE’S EARNING DISCLAIMER</p>
+                                <i class = "arrow"></i>
+                            </div>
+                            <div class = "opening">
+                                <p data-i18n>Please note that Mr.Click and its affiliated domains receives advertising fees for directing users to open an account with the financial institutions/advertisers and/or for driving traffic to the advertiser website.</p>
+                            </div>
+                        </div>
+                        <div class = "details">
+                            <div class = "summary">
+                                <p data-i18n>SITE RISK DISCLOSURE</p>
+                                <i class = "arrow"></i>
+                            </div>
+                            <div class = "opening">
+                                <p data-i18n>This web page does not accept any liability for loss or damage as a result of reliance on the information contained within this website; this includes education material, price quotes and charts, and analysis. Please be aware of the risks associated with trading the financial markets; never invest more money than you can risk losing. The risks involved in trading Stocks, Shares, Forex, CFDs and Cryptocurrencies may not be suitable for all investors. We do not retain responsibility for any trading losses you might face as a result of using the data hosted on this site.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "column-spoilers">
+                        <div class = "details">
+                            <div class = "summary">
+                                <p data-i18n>REGULATION & HIGH RISK INVESTMENT WARNING</p>
+                                <i class = "arrow"></i>
+                            </div>
+                            <div class = "opening">
+                                <p>
+                                    <span data-i18n>Trading Forex, CFDs and Cryptocurrencies is highly speculative, carries a level of risk and may not be suitable for all investors. You may lose some or all of your invested capital, therefore you should not speculate with capital that you cannot afford to lose. Please click here to read a full risk warning.</span></br>
+                                </br>
+                                    <span data-i18n>This web page is a part of Mr.Click marketing and advertising agency which does not gain or lose profits based on your trading results and operates as a marketing and advertising provider, by referring potential / interested individuals across the globe to regulated financial institutions. In addition, this web page is not a financial services firm and does not operate as a financial services firm and is only used as a marketing tool by third party advertisers and financial institutions to attract customers.</span> </br>
+                            </br>
+                                    <span data-i18n>We ask all of our web page visitors to check and decide whether the broker you were connected to applies to all local rules and regulations and is regulated in your country jurisdiction and is allowed to receive customers from the location you are in, before you fund your account with the broker and start trading with it, as It is your obligation to verify the above. Please feel free to contact us or report back (by clicking “Contact Us”) if you find that the broker assigned to you is not regulated in your jurisdiction so we can cancel your account accordingly.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class = "details">
+                            <div class = "summary">
+                                <p data-i18n>LEGAL RESTRICTIONS</p>
+                                <i class = "arrow"></i>
+                            </div>
+                            <div class = "opening">
+                                <p>
+                                    <span data-i18n>Without limiting the mentioned provisions, you understand that laws regarding financial contracts vary throughout the world, and it is your responsibility to make sure you properly comply with any law, regulation or guideline in your country of residence regarding the use of the Site. To avoid any doubt, the ability to access our Site does not necessarily mean that our Services and/or your activities through the Site are legal under the laws, regulations or directives relevant to your country of residence.</span></br>
+                                </br>
+                                    <span data-i18n>If you feel you landed on this page by wrong doings of a 3rd party website/promoter please report it by clicking Report Abuse or Contact Us links at the footer.We have placed cookies on your computer to help improve your experience when visiting this website. You can change cookie settings on your computer at any time. Use of this website indicates your acceptance of this website's Privacy Policy.</span>
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </footer>
+            </div>
         </div>
-        <script>
-            AOS.init();
-        </script>
-        <script>
-            $('#submit-button').click( function( e ){
-                e.preventDefault();
-                $('#form').addClass('hidden-form2');
-                $('#form2').removeClass('hidden-form2');
-                $('.intro .container .content').addClass('align-end');
-            });
-        </script>
-        <script>
-             $('.summary').click(function() {
-                var spoiler = $(this).next();
-                var arrow = $(this).children(".arrow");
-
-                if(spoiler.is(':visible')){
-                    spoiler.slideUp('normal');
-                    arrow.removeClass("rotated-arrow");
-                }
-                else{
-                    spoiler.slideDown('normal');
-                    arrow.addClass("rotated-arrow");
-                }
-            });
-        </script>
-        <script>
-            $(".start-now-link").each(function(){
-                $(this).click(function() { 
-                    $('html, body').animate({
-                        scrollTop: $("#form").offset().top
-                    }, 1000); 
-                });
-            })
-        </script>
-        <script>
-            $(function () {
-                var waitIntgrtn = setInterval(function () {
-                    if (!window.intgrtn) {
-                        return false;
-                    }
-                    clearInterval(waitIntgrtn);
-        
-                    window.intgrtn.events.on("get.project.details.success", function (response) {
-                        console.log('response', response.data.client.location.areaCode);
-                        console.log('response', response.data.client.location.city);
-                        console.log('response', response.data.client.location.country);
-                        console.log('response', response.data.client.location.countryIsoCode);
-                        document.getElementById( "location" ).innerText = response.data.client.location.country + " RESIDENTS";
-                        let countryCode = response.data.client.location.countryIsoCode;
-                        document.getElementById("flag").src = "flags/special/" + countryCode.toLowerCase() + ".png"
-                    });
-                }, 10);
-            });
-        </script>
-    </body>
-</html>
+    </footer>
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/intgrtn-i18n.js"></script>
+<script src="js/custom.js?v=2"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+     $('.summary').click(function() {
+        var spoiler = $(this).next();
+        var arrow = $(this).children(".arrow")
+        if(spoiler.is(':visible')){
+            spoiler.slideUp('normal');
+            arrow.removeClass("rotated-arrow");
+        }
+        else{
+            spoiler.slideDown('normal');
+            arrow.addClass("rotated-arrow");
+        }
+    });
+</script>
+<script>
+    $('.summary-faq').click(function() {
+       var spoiler = $(this).next();
+       var arrow = $(this).children(".round-button")
+       if(spoiler.is(':visible')){
+           spoiler.slideUp('normal');
+           arrow.removeClass("round-button-rotated");
+       }
+       else{
+           spoiler.slideDown('normal');
+           arrow.addClass("round-button-rotated");
+       }
+   });
+</script>
+<script>
+    $(".start-now-link").each(function(){
+        $(this).click(function() { 
+            $('html, body').animate({
+                scrollTop: $("#form").offset().top
+            }, 1000); 
+        });
+    })
+</script>
+<script>
+     $('.register-form-button').on("click", function (e) {
+        e.preventDefault();
+        window.location.href = "https://track.exness.com/boarding/sign-up/a/c_z55rkn9m1a?clickID=" + window.intgrtn.lookup("clickID", true) + "&track1=" + window.intgrtn.lookup("email", true);
+    });
+</script>
